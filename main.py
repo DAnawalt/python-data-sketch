@@ -1,3 +1,5 @@
+from 
+
 pets = {
     'dogs': [
         {
@@ -69,14 +71,19 @@ for x, y in pets.items():
 
 for x, y in pets.items():
     if x == pet_type:
-        print(y)
+        #print(y)
+        
         for z in y:
             print(z)
-            print(z.keys())
-            print(z.values())
-            for i1 in z.keys():
-                print("i1")
-                print(i1)
-            for i2 in z.values():
+            #print(z.keys())
+            #print(z.values())
+            #for i1 in z.keys():
+            #    print("i1")
+            #    print(i1)
+            for i2 in z.items():
                 print("i2")
                 print(i2)
+                print("i2[1](i2.values)")
+                if i2[0] == "name":
+                
+                print(i2[0])
