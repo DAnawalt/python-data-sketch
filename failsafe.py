@@ -1,6 +1,7 @@
 from flask import Flask
 from helper import pets
 
+#This is the real main file.
 if __name__ == "__main__":
   app.run()
 
