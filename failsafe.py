@@ -1,7 +1,6 @@
 from flask import Flask
 from helper import pets
 
-#This is the real main file.
 if __name__ == "__main__":
   app.run()
 
@@ -26,15 +25,16 @@ def animals(pet_type):
   for x, y in pets.items():
     if x == pet_type:
       for z in y:
-        html += f'<>\n</>'
-        for i3 in z.values():
-          html += f'<li>{i3}</li>'
+        for i3 in z.items():
+          if i3[0] == "name":
+            html += f'<li>{i3[1]}</li>'
   html += '</ul>'
   return html
-
+"""
 @app.route('/animals/<string:pet_type>/<int:pet_id>')
 def pet(pet_type, pet_id):
   for x, y in pets.items():
     if x == pet_type:
         for z in y:
             print(z)
+"""
