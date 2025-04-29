@@ -1,4 +1,5 @@
-from 
+from colorama import init
+from termcolor import colored
 
 pets = {
     'dogs': [
@@ -85,5 +86,6 @@ for x, y in pets.items():
                 print(i2)
                 print("i2[1](i2.values)")
                 if i2[0] == "name":
-                
-                print(i2[0])
+                    print(colored(i2[0], 'yellow', 'on_blue'))
+                else:
+                    print(i2[0])
