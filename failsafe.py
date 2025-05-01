@@ -27,9 +27,10 @@ def animals(pet_type):
       for z in y:
         for i3 in z.items():
           if i3[0] == "name":
-            html += f'<li>{i3[1]}</li>'
+            html += f'<li><a href="{pet_type}/{i3[1]}">{i3[1]}</a></li>'
   html += '</ul>'
   return html
+#@app.route('/animals/<string:pet_type>/{i3{1}}')
 """
 @app.route('/animals/<string:pet_type>/<int:pet_id>')
 def pet(pet_type, pet_id):
