@@ -73,11 +73,13 @@ for x, y in pets.items():
 for x, y in pets.items():
     if x == pet_type:        
         for z in y:
+            #print(z)
             for i2 in z.items():
                 print(i2)
-                if i2[0] == "name":
-                    print("This is highlighted!!!+" + i2[1])
+                #if i2[0] == "name":
+                    #print("This is highlighted!!!+" + i2[1])
                 """
                 else:
                     print(i2[0])
                 """
+
